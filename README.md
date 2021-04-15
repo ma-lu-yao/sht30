@@ -1,4 +1,5 @@
 # sht30
+```
 SHT30 Sensor Reader for Raspberry
     -h, --help:     show this usage.
     -b, --busid=    I2C busid,default 3
@@ -6,3 +7,4 @@ SHT30 Sensor Reader for Raspberry
     -t              Show Temperature only, Ingore Humidity
     -c|-k|-f        Show Temperature in Celsius(default), Kelvin or Fahrenheit
     -v, --version   show version
+```
