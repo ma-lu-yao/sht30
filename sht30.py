@@ -69,13 +69,13 @@ def main():
     temp = (-45 + rawT * 175 / 65535)
     if (tempStd==0): # Celsius
         temp = Decimal(temp).quantize(Decimal("0.00"))
-        tempstr = str(temp)#+' \u2103'
+        tempstr = str(temp)+' \u2103'
     if (tempStd==1): # Kelvin
         temp=temp+273.15
-        tempstr = str(Decimal(temp).quantize(Decimal("0.00")))#+' \u212a'
+        tempstr = str(Decimal(temp).quantize(Decimal("0.00")))+' \u212a'
     if (tempStd==2): #Fahrenheit
         temp=(temp*1.8)+32.0
-        tempstr = str(Decimal(temp).quantize(Decimal("0.00")))#+' \u2109'
+        tempstr = str(Decimal(temp).quantize(Decimal("0.00")))+' \u2109'
     print(tempstr)
     if (isShowHumidity):
         rawR = ((data[3]) << 8) | (data[4])
