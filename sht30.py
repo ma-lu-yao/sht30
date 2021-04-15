@@ -18,7 +18,7 @@ def usage():
 def getValue():
     return 3
 def main():
-    busid=3
+    busid=1
     addr=0x44
     version=0.1
     tempStd=0 # 0 Celsius , 1 Kelvin, 2 Fahrenheit
